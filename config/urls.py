@@ -26,7 +26,7 @@ urlpatterns = [
     path('cards/', views.cards, name='cards'),
     path('charts/', views.charts, name='charts'),
     path('forgot-password/', views.password, name='password'),
-    path('', views.login, name='login'),
+    path('login', views.login, name='login'),
     path('register/', views.register, name='register'),
     path('tables/', views.tables, name='tables'),
     path('utilities-animation/', views.animation, name='animation'),
@@ -39,7 +39,6 @@ urlpatterns = [
     path('suggest-vote/',views.suggest_vote, name='suggest-vote'),
     path('suggest-other/',views.suggest_other, name='suggest-other'),
     path('main/',views.main, name='main'),
-<<<<<<< HEAD
     path('school-vote/', views.school_vote, name='school-vote'),
     path('college-vote/', views.college_vote, name='college-vote'),
     path('department-vote/', views.department_vote, name='department-vote'),
@@ -50,7 +49,6 @@ urlpatterns = [
     path('college-pledge/', views.college_pledge, name='college-pledge'),
     path('department-voting/', views.department_voting, name='department-voting'),
     path('department-pledge/', views.department_pledge, name='department-pledge'),
-=======
     path('result/',views.result, name='vote-result'),
->>>>>>> da12c37ff82f702df993ed2b50dc1d396174caa5
+    path('',views.login_new, name='login-new'),
 ]
